@@ -68,7 +68,7 @@ h1, h2, h3, h4, h5 {
 
 #body {
 	border: 3px solid black;
-	width: 100%;
+	width: 90%;
 	margin: 0 auto;
 }
 
@@ -87,31 +87,64 @@ h1, h2, h3, h4, h5 {
     }
 }
 
-#nav {
-	border: 3px solid red;
+.nav {
+    border: 3px solid red;
+    display: flex;
+    flex-grow: 0.9;
+	justify-content: space-around;
+}
+
+@media (max-width: 500px) {
+    .nav {
+        flex-direction: column;
+    }
 }
 
 #greatIdea {
     border: 3px solid green;
-    
+}
+
+@media (max-width: 500px) {
+    #greatIdea {
+        padding-bottom: 10px;
+        border-bottom: 1px solid grey;
+    }
 }
 
 .nav-link {
-	color: grey;
-	margin: 33px;
-	border-top: 15px;
+    color: grey;
+    text-decoration: none;
+    margin: 33px 0;
+    border-top: 15px;
 }
+
+@media (max-width: 500px) {
+    .nav-link {
+        margin: 10px;
+        padding-bottom: 25px;
+        border-bottom: 1px solid grey
+    }
+}
+
 #section2 {
 	border: 2px solid brown;
 	display: flex;
 	justify-content: space-between;
 }
+
+@media (max-width: 800px) {
+    #section2 {
+        justify-content: center;
+    }
+}
+
 #div1 {
 	border: 3px solid grey;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 }
+
 #innovation {
 	border: 3px solid green;
 	text-align: center;
@@ -124,10 +157,15 @@ h1, h2, h3, h4, h5 {
 	margin-left: 160px;
 	text-align: center;
 }
+
+.imground {
+    width: 100%;
+}
+
 #round {
 	border :3px solid pink;
 	display: inline-block;
-	width: 450px;
+	width: 100%;
 	text-align: center;
 }
 
@@ -145,10 +183,11 @@ h1, h2, h3, h4, h5 {
 }
 .mid-img {
 	border: 3px solid yellow;
-	text-align: center;
+    text-align: center;
+    width: 100%;
 }
 .middle-img {
-	width: 950px;
+	width: 100%;
 	margin: 0 auto;
 }
 .div3 {
