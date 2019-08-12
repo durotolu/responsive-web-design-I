@@ -181,6 +181,13 @@ h1, h2, h3, h4, h5 {
 	width: 450px;
 	margin: 20px;
 }
+
+@media (max-width: 500px) {
+    .div2 {
+        width: 90%;
+    }
+}
+
 .mid-img {
 	border: 3px solid yellow;
     text-align: center;
@@ -190,21 +197,48 @@ h1, h2, h3, h4, h5 {
 	width: 100%;
 	margin: 0 auto;
 }
+
+@media (max-width: 500px) {
+    .middle-img {
+        height: 90px;
+    }
+}
+
 .div3 {
 	display: inline-block;
 	width: 280px;
 	margin: 20px;
 }
+
+@media (max-width: 500px) {
+    .div3 {
+        width: 90%;
+    }
+}
+
 #Section3 {
 	display: flex;
 	justify-content: space-between;
-	border-top: 1px solid black;	
+    border-top: 1px solid black;
 }
 #Section5 {
 	border-bottom: 1px solid black;
 	display: flex;
 	justify-content: space-between;
 }
+
+@media (max-width: 500px) {
+    #Section3 {
+        flex-direction: column;	
+    }
+    #Section5 {
+        flex-direction: column;	
+    }
+    .div2 {
+        width: 90%;
+    }
+}
+
 p {
 	margin: 25px 0;
 }
