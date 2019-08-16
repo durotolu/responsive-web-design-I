@@ -1,3 +1,340 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 
+#body {
+	width: 95%;
+	margin: 0 auto;
+}
+
+@media (min-width: 500px) {
+    #body {
+        width: 75%;
+    }
+}
+
+#header {
+	padding: 20px;
+	display: flex;
+	flex-direction: column-reverse;
+    justify-content: space-between;
+    text-align: center;
+}
+
+@media (min-width: 800px) {
+    #header {
+        flex-direction: row;
+    }
+}
+
+.nav {
+    display: flex;
+    flex-grow: 0.9;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+@media (min-width: 500px) {
+    .nav {
+        flex-direction: row;
+    }
+}
+
+#greatIdea {
+    padding-bottom: 10px;
+    border-bottom: 1px solid grey;
+}
+
+@media (min-width: 500px) {
+    #greatIdea {
+        padding-bottom: none;
+        border-bottom: none;
+    }
+}
+
+.nav-link {
+    color: grey;
+    text-decoration: none;
+    margin: 33px 0;
+    border-top: 15px;
+    margin: 10px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid grey;
+}
+
+@media (min-width: 500px) {
+    .nav-link {
+        color: grey;
+        text-decoration: none;
+        margin: 33px 0;
+        padding-bottom: none;
+        border-bottom: none;
+    }
+}
+
+#section2 {
+	display: flex;
+	justify-content: center;
+}
+
+@media (min-width: 800px) {
+    #section2 {
+        justify-content: space-between;
+    }
+}
+
+#div1 {
+	display: flex;
+	flex-direction: column;
+    justify-content: center;
+    width: 90%;
+}
+
+#innovation {
+	text-align: center;
+	font-size: 50px;
+    width: 100%;
+}
+
+@media (min-width: 500px) {
+    #innovation {
+        width: 100%;
+    }
+}
+
+#getStarted {
+	border: 2px solid black;
+	width: 100px;
+	margin-left: 35%;
+	text-align: center;
+}
+
+@media (min-width:500px) {
+    #getStarted {
+        margin-left: 150px;
+    }
+}
+
+.imground {
+    width: 100%;
+}
+
+#round {
+	display: none;
+	width: 90%;
+	text-align: center;
+}
+
+@media (min-width: 800px) {
+    #round {
+        display: inline-block;
+    }
+}
+
+.div2 {
+	display: inline-block;
+	width: 90%;
+	margin: 20px;
+}
+
+@media (min-width: 500px) {
+    .div2 {
+        width: 450px;
+    }
+}
+
+.mid-img {
+    text-align: center;
+    width: 100%;
+}
+.middle-img {
+	width: 100%;
+    margin: 0 auto;
+    height: 90px;
+}
+
+@media (max-width: 500px) {
+    .middle-img {
+        height: auto;
+    }
+}
+
+.div3 {
+	display: inline-block;
+	width: 90%;
+	margin: 20px;
+}
+
+@media (min-width: 500px) {
+    .div3 {
+        width: 280px;
+    }
+}
+
+#Section3 {
+	display: flex;
+	justify-content: space-between;
+    border-top: 1px solid black;
+    flex-direction: column;
+}
+#Section5 {
+	border-bottom: 1px solid black;
+	display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+@media (min-width: 500px) {
+    #Section3 {
+        flex-direction: row;	
+    }
+    #Section5 {
+        flex-direction: row;	
+    }
+    .div2 {
+        width: 90%;
+    }
+}
+
+p {
+	margin: 25px 0;
+}
+#address {
+	margin: 50px 0 0 0px;
+}
+#copyright {
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 90px;
+}
+#inno {
+	text-align: center;
+}
+.courses {
+	background-color: rgb(192, 189, 189);
+	display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+@media (min-width: 500px) {
+    .courses {
+        flex-direction: row;
+    }
+}
+
+.cos {
+    border: 1px solid black;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.learn {
+	border: 2px solid black;
+    width: 85px;
+    margin-top: 10px;
+}
+.mid-img.iphone {
+    display: flex;
+    width: 100%;
+    display: none;
+}
+
+@media (min-width: 500px) {
+    .mid-img.iphone {
+        display: flex;
+    } 
+}
+
+.services-header-img {
+	width: 100%;
+}
+@media (max-width: 200px) {
+	/* For mobile phones: */
+	.body {
+	  width: 30%;
+	}
+  }
+
+  .s1 {
+      border-bottom: 1px solid black;
+      padding: 10px
+  }
+
+  .services-img {
+      display: none;
+  }
+
+  @media (min-width: 500px) {
+    .services-img {
+        width: 50%;
+    }
+  }
+
+  ul {
+      margin-left: 4%;
+  }
